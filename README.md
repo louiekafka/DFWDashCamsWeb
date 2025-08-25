@@ -10,7 +10,7 @@ A modern, full-stack monorepo template built with Next.js App Router, Sanity CMS
 
 - Apps: web (Next.js frontend) and studio (Sanity Studio)
 - Shared packages: UI components, TypeScript config, ESLint config
-- Turborepo for build orchestration and caching
+- Turborepo for build orchestration and caching hi
 
 ### Frontend (Web)
 
@@ -110,6 +110,7 @@ The template includes a GitHub Actions workflow [`deploy-sanity.yml`](https://ra
 Set `SANITY_STUDIO_PRODUCTION_HOSTNAME` to whatever you want your deployed Sanity Studio hostname to be. Eg. for `SANITY_STUDIO_PRODUCTION_HOSTNAME=my-cool-project` you'll get a studio URL of `https://my-cool-project.sanity.studio` (and `<my-branch-name>-my-cool-project.sanity.studio` for PR previews builds done automatically via the `deploy-sanity.yml` github CI workflow when you open a PR.)
 
 Set `SANITY_STUDIO_PRESENTATION_URL` to your web app front-end URL (from the Vercel deployment). This URL is required for production deployments and should be:
+
 - Set in your GitHub repository secrets for CI/CD deployments
 - Set in your local environment if deploying manually with `npx sanity deploy`
 - Not needed for local development, where preview will automatically use http://localhost:3000
