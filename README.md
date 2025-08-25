@@ -14,7 +14,7 @@ A modern, full-stack monorepo template built with Next.js App Router, Sanity CMS
 
 ### Frontend (Web)
 
-- Next.js App Router with TypeScript
+- Next.js App Router with TypeScript test
 - Shadcn UI components with Tailwind CSS
 - Server Components and Server Actions
 - SEO optimization with metadata
