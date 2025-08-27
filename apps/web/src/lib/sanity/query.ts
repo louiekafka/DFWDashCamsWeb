@@ -173,15 +173,16 @@ const featureCardsIconBlock = /* groq */ `
     })
   }
 `;
-// Add this new block fragment following your pattern
 const whyChooseUsBlock = /* groq */ `
   _type == "whyChooseUs" => {
+    _type, // ← include this!
     ...,
-    ${richTextFragment}, // for the main body richText
-    ${imageFragment},    // for the image field
+    ${richTextFragment},
+    ${imageFragment},
     "list": array::compact(list[]{
+      _type, // include this for nested objects if needed
       ...,
-      ${richTextFragment}, // iconListItem also has customRichText
+      ${richTextFragment}
     })
   }
 `;
