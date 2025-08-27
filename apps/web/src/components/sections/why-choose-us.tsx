@@ -5,7 +5,6 @@ import type { PagebuilderType } from "@/types";
 import { RichText } from "../elements/rich-text";
 import { SanityIcon } from "../elements/sanity-icon";
 import { SanityImage } from "../elements/sanity-image";
-
 type WhyChooseUsBlockProps = PagebuilderType<"whyChooseUs">;
 
 type WhyChooseUsListProps = {
