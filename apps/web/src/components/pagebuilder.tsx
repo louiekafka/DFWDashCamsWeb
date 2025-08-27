@@ -15,6 +15,7 @@ import { HeroBlock } from "./sections/hero";
 import { ImageLinkCards } from "./sections/image-link-cards";
 import { SubscribeNewsletter } from "./sections/subscribe-newsletter";
 import { WhyChooseUsBlock } from "./sections/why-choose-us";
+
 // More specific and descriptive type aliases
 type PageBuilderBlock = NonNullable<
   NonNullable<QueryHomePageDataResult>["pageBuilder"]
