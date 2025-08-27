@@ -14,7 +14,7 @@ import { FeatureCardsWithIcon } from "./sections/feature-cards-with-icon";
 import { HeroBlock } from "./sections/hero";
 import { ImageLinkCards } from "./sections/image-link-cards";
 import { SubscribeNewsletter } from "./sections/subscribe-newsletter";
-
+import { WhyChooseUsBlock } from "./sections/why-choose-us";
 // More specific and descriptive type aliases
 type PageBuilderBlock = NonNullable<
   NonNullable<QueryHomePageDataResult>["pageBuilder"]
@@ -53,6 +53,9 @@ const BLOCK_COMPONENTS = {
   >,
   imageLinkCards: ImageLinkCards as React.ComponentType<
     PagebuilderType<"imageLinkCards">
+  >,
+  whyChooseUs: WhyChooseUsBlock as React.ComponentType<
+    PagebuilderType<"whyChooseUs">
   >,
 } as const satisfies Record<PageBuilderBlockTypes, React.ComponentType<any>>;
 

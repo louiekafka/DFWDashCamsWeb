@@ -173,7 +173,18 @@ const featureCardsIconBlock = /* groq */ `
     })
   }
 `;
-
+// Add this new block fragment following your pattern
+const whyChooseUsBlock = /* groq */ `
+  _type == "whyChooseUs" => {
+    ...,
+    ${richTextFragment}, // for the main body richText
+    ${imageFragment},    // for the image field
+    "list": array::compact(list[]{
+      ...,
+      ${richTextFragment}, // iconListItem also has customRichText
+    })
+  }
+`;
 const pageBuilderFragment = /* groq */ `
   pageBuilder[]{
     ...,
@@ -183,7 +194,8 @@ const pageBuilderFragment = /* groq */ `
     ${faqAccordionBlock},
     ${featureCardsIconBlock},
     ${subscribeNewsletterBlock},
-    ${imageLinkCardsBlock}
+    ${imageLinkCardsBlock},
+    ${whyChooseUsBlock}
   }
 `;
 
