@@ -14,13 +14,13 @@ type FeatureCardProps = {
 function FeatureCard({ card }: FeatureCardProps) {
   const { icon, title, richText } = card ?? {};
   return (
-    <div className="rounded-3xl bg-accent p-8 md:min-h-[300px] md:p-8">
-      <span className="mb-9 flex w-fit p-3 items-center justify-center rounded-full bg-background drop-shadow-xl">
+    <div className="rounded-3xl bg-white p-8 md:min-h-[300px] shadow-lg inset-shadow-sm md:p-8">
+      <span className="mb-9 flex w-fit p-3 items-center justify-center rounded-full text-[#0064b1] bg-[#0064b11a] drop-shadow-xl">
         <SanityIcon icon={icon} />
       </span>
 
       <div>
-        <h3 className="text-lg font-medium md:text-2xl mb-2">{title}</h3>
+        <h3 className="text-lg font-bold md:text-2xl mb-2">{title}</h3>
         <RichText
           richText={richText}
           className="font-normal text-sm md:text-[16px] text-black/90 leading-7 text-balance dark:text-neutral-300"
